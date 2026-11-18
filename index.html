@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="el"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Βόλτες ΣΚ 21–22/11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600&family=JetBrains+Mono:wght@500;700&family=Tektur:wght@600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0b0b;--card:#1c1a2b;--card2:#26223b;--line:#33191f;--text:#ece8f4;--mut:#9a93ad;--red:#ff1f3d;--red2:#ff2d55;--vio:#9b6bff;--vio2:#7a1fd6;--cut:14px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font:16px/1.55 "Hanken Grotesk",system-ui,sans-serif;padding:2.5rem 1rem 4rem}
+.wrap{max-width:1180px;margin:0 auto}
+.top{margin-bottom:2.5rem}
+.kick{font:700 .78rem "JetBrains Mono",monospace;color:var(--red2);letter-spacing:.14em;text-transform:uppercase}
+h1{font:800 clamp(1.9rem,5vw,2.8rem)/1.1 Tektur,sans-serif;margin:.5rem 0 .8rem}
+h1 em{font-style:normal;color:var(--red)}
+.lede{color:var(--mut);max-width:62ch}
+.wx{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:.8rem;margin-top:1.6rem}
+.wx div{background:var(--card);padding:1rem 1.1rem;clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%)}
+.wx b{display:block;font:700 1rem "JetBrains Mono",monospace;color:#fff}
+.wx span{color:var(--mut);font-size:.9rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,540px),1fr));gap:1.4rem}
+.card{background:var(--card);padding:1.4rem;display:flex;flex-direction:column;gap:1rem;clip-path:polygon(0 0,calc(100% - 22px) 0,100% 22px,100% 100%,22px 100%,0 calc(100% - 22px));transition:background .2s}
+.card:hover{background:var(--card2)}
+.ch{display:flex;align-items:baseline;gap:.8rem;flex-wrap:wrap}
+.num{font:700 .9rem "JetBrains Mono",monospace;color:var(--vio)}
+h2{font:600 1.45rem/1.2 Tektur,sans-serif}
+.tag{margin-left:auto;font:700 .7rem "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.1em;color:#fff;background:var(--red);padding:.25rem .6rem;clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.is-top:hover .tag{box-shadow:0 0 18px var(--red2)}
+.stats{display:grid;grid-template-columns:repeat(4,auto);gap:.4rem 1.6rem;justify-content:start}
+.stats b{display:block;font:700 1rem "JetBrains Mono",monospace;color:#fff;white-space:nowrap}
+.stats span{font-size:.75rem;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.card p{color:#cfc8de}
+figure{cursor:zoom-in;position:relative;overflow:hidden;background:#000}
+figure img{display:block;width:100%;transition:transform .35s,filter .35s}
+.map{clip-path:polygon(0 0,calc(100% - var(--cut)) 0,100% var(--cut),100% 100%,0 100%)}
+.map img{aspect-ratio:2/1;object-fit:cover}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.ph img{aspect-ratio:3/2;object-fit:cover;filter:saturate(.9) brightness(.9)}
+figure:hover img{transform:scale(1.03);filter:none}
+figcaption{position:absolute;left:0;right:0;bottom:0;padding:1.4rem .7rem .5rem;font-size:.82rem;background:linear-gradient(transparent,rgba(13,11,11,.9))}
+.go{align-self:flex-start;margin-top:auto;font:700 .85rem "JetBrains Mono",monospace;color:#fff;text-decoration:none;background:var(--vio2);padding:.65rem 1.1rem;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,0 100%);transition:box-shadow .2s,background .2s}
+.go:hover{background:var(--vio);box-shadow:0 0 22px var(--vio)}
+.tips{margin-top:2.5rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:.8rem}
+.tips div{background:var(--card);padding:1rem 1.1rem;color:#cfc8de;font-size:.92rem}
+.tips b{display:block;color:#fff;font-family:Tektur,sans-serif;font-weight:600;margin-bottom:.2rem}
+footer{margin-top:2.5rem;color:var(--mut);font-size:.78rem}
+footer a{color:var(--mut)}
+#lb{position:fixed;inset:0;background:rgba(5,4,8,.94);display:none;align-items:center;justify-content:center;flex-direction:column;gap:.8rem;padding:1rem;z-index:9;cursor:zoom-out}
+#lb.on{display:flex}
+#lb img{max-width:96vw;max-height:86vh}
+#lb p{font:600 1rem Tektur,sans-serif}
+@media(max-width:560px){.stats{grid-template-columns:repeat(2,auto)}}
+</style></head><body><div class="wrap">
+<section class="top">
+<div class="kick">Αυθημερόν · από Θεσσαλονίκη</div>
+<h1>Βόλτες <em>21–22/11</em></h1>
+<p class="lede">10 διαδρομές χωρίς Χαλκιδική, Χολομώντα και Βέρμιο. Τα km και οι ώρες είναι καθαρή οδήγηση, πήγαινε-έλα.</p>
+<div class="wx">
+<div><b>Σάββατο · 12–18°C</b><span>Στεγνό, καθαρός ουρανός</span></div>
+<div><b>Κυριακή · 11–17°C</b><span>Στεγνό, λίγη συννεφιά</span></div>
+<div><b>Δύση ~17:10</b><span>Ξεκίνημα ως τις 9:00</span></div>
+</div>
+</section>
+<section class="grid">
+<article class="card is-top">
+<header class="ch"><span class="num">01</span><h2>Πάικο &amp; Πόζαρ</h2><span class="tag">Σύσταση</span></header>
+<div class="stats"><div><b>285</b><span>km</span></div><div><b>5,0</b><span>ώρες</span></div><div><b>Σάββατο</b><span>μέρα</span></div><div><b>9–15°C</b><span>καιρός</span></div></div>
+<p>Αμπέλια Γουμένισσας, στροφές ως τα 800 μ., ζεστά νερά στο Πόζαρ, καταρράκτες Έδεσσας.</p>
+<figure class="map" data-src="img/map_1.jpg" data-cap="Πάικο &amp; Πόζαρ"><img src="img/map_1.jpg" alt="Χάρτης: Πάικο &amp; Πόζαρ" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r1_1.jpg" data-cap="Λουτρά Πόζαρ"><img src="img/r1_1.jpg" alt="Λουτρά Πόζαρ" loading="lazy"><figcaption>Λουτρά Πόζαρ</figcaption></figure><figure class="ph" data-src="img/r1_2.jpg" data-cap="Καταρράκτες Έδεσσας"><img src="img/r1_2.jpg" alt="Καταρράκτες Έδεσσας" loading="lazy"><figcaption>Καταρράκτες Έδεσσας</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.99459,22.57210/40.94664,22.45194/40.97855,22.38653/41.08306,22.28014/40.97175,21.91341/40.80085,22.05035/40.79304,22.41148/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card">
+<header class="ch"><span class="num">02</span><h2>Λιτόχωρο &amp; Πριόνια</h2></header>
+<div class="stats"><div><b>224</b><span>km</span></div><div><b>3,2</b><span>ώρες</span></div><div><b>Όποια</b><span>μέρα</span></div><div><b>6–11°C</b><span>καιρός</span></div></div>
+<p>18 km φουρκέτες μέσα σε έλατα, ως τα 1100 μ. του Ολύμπου. Τσίπουρο στο Λιτόχωρο.</p>
+<figure class="map" data-src="img/map_2.jpg" data-cap="Λιτόχωρο &amp; Πριόνια"><img src="img/map_2.jpg" alt="Χάρτης: Λιτόχωρο &amp; Πριόνια" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r2_1.jpg" data-cap="Λιτόχωρο, Ενιπέας"><img src="img/r2_1.jpg" alt="Λιτόχωρο, Ενιπέας" loading="lazy"><figcaption>Λιτόχωρο, Ενιπέας</figcaption></figure><figure class="ph" data-src="img/r2_2.jpg" data-cap="Μονή Αγ. Διονυσίου, Πριόνια"><img src="img/r2_2.jpg" alt="Μονή Αγ. Διονυσίου, Πριόνια" loading="lazy"><figcaption>Μονή Αγ. Διονυσίου, Πριόνια</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.17217,22.48743/40.10245,22.50182/40.08300,22.41000/40.10245,22.50182/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card is-top">
+<header class="ch"><span class="num">03</span><h2>Κάτω Όλυμπος &amp; Τέμπη</h2><span class="tag">Σύσταση</span></header>
+<div class="stats"><div><b>284</b><span>km</span></div><div><b>4,5</b><span>ώρες</span></div><div><b>Σάββατο</b><span>μέρα</span></div><div><b>10–16°C</b><span>καιρός</span></div></div>
+<p>Κάστρο Πλαταμώνα, πέτρινος Παλαιός Παντελεήμονας, κρασί στη Ραψάνη, κατάβαση στα Τέμπη.</p>
+<figure class="map" data-src="img/map_3.jpg" data-cap="Κάτω Όλυμπος &amp; Τέμπη"><img src="img/map_3.jpg" alt="Χάρτης: Κάτω Όλυμπος &amp; Τέμπη" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r3_1.jpg" data-cap="Κάστρο Πλαταμώνα"><img src="img/r3_1.jpg" alt="Κάστρο Πλαταμώνα" loading="lazy"><figcaption>Κάστρο Πλαταμώνα</figcaption></figure><figure class="ph" data-src="img/r3_2.jpg" data-cap="Παλαιός Παντελεήμονας"><img src="img/r3_2.jpg" alt="Παλαιός Παντελεήμονας" loading="lazy"><figcaption>Παλαιός Παντελεήμονας</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.00500,22.59700/39.97950,22.57000/39.89900,22.61402/39.85970,22.52986/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card">
+<header class="ch"><span class="num">04</span><h2>Πιέρια όρη</h2></header>
+<div class="stats"><div><b>224</b><span>km</span></div><div><b>3,3</b><span>ώρες</span></div><div><b>Εφεδρική</b><span>μέρα</span></div><div><b>9–14°C · ριπές 70–90</b><span>καιρός</span></div></div>
+<p>Άδειο βουνό κοντά στην πόλη. Η πρόγνωση δίνει δυνατό αέρα και τις δύο μέρες.</p>
+<figure class="map" data-src="img/map_4.jpg" data-cap="Πιέρια όρη"><img src="img/map_4.jpg" alt="Χάρτης: Πιέρια όρη" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r4_1.jpg" data-cap="Πιέρια"><img src="img/r4_1.jpg" alt="Πιέρια" loading="lazy"><figcaption>Πιέρια</figcaption></figure><figure class="ph" data-src="img/r4_2.jpg" data-cap="Ελατοχώρι"><img src="img/r4_2.jpg" alt="Ελατοχώρι" loading="lazy"><figcaption>Ελατοχώρι</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.27136,22.50876/40.31986,22.26478/40.29019,22.28533/40.19208,22.43286/40.27136,22.50876/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card is-top">
+<header class="ch"><span class="num">05</span><h2>Κερκίνη &amp; Μπέλλες</h2><span class="tag">Σύσταση</span></header>
+<div class="stats"><div><b>275</b><span>km</span></div><div><b>4,5</b><span>ώρες</span></div><div><b>Κυριακή</b><span>μέρα</span></div><div><b>10–19°C</b><span>καιρός</span></div></div>
+<p>Πελεκάνοι και βουβάλια, ανάβαση στα Άνω Πορόια με θέα όλη τη λίμνη.</p>
+<figure class="map" data-src="img/map_5.jpg" data-cap="Κερκίνη &amp; Μπέλλες"><img src="img/map_5.jpg" alt="Χάρτης: Κερκίνη &amp; Μπέλλες" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r5_1.jpg" data-cap="Πελεκάνοι, Κερκίνη"><img src="img/r5_1.jpg" alt="Πελεκάνοι, Κερκίνη" loading="lazy"><figcaption>Πελεκάνοι, Κερκίνη</figcaption></figure><figure class="ph" data-src="img/r5_2.jpg" data-cap="Λίμνη Κερκίνη"><img src="img/r5_2.jpg" alt="Λίμνη Κερκίνη" loading="lazy"><figcaption>Λίμνη Κερκίνη</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.99359,22.87415/41.21735,23.08474/41.28709,23.03507/41.22914,23.37592/41.09107,23.54980/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card is-top">
+<header class="ch"><span class="num">06</span><h2>Δοϊράνη &amp; Σκρά</h2><span class="tag">Σύσταση</span></header>
+<div class="stats"><div><b>209</b><span>km</span></div><div><b>3,7</b><span>ώρες</span></div><div><b>Κυριακή</b><span>μέρα</span></div><div><b>9–17°C</b><span>καιρός</span></div></div>
+<p>Λίμνη στα σύνορα και ο ήσυχος ακριτικός δρόμος ως τους καταρράκτες του Σκρά.</p>
+<figure class="map" data-src="img/map_6.jpg" data-cap="Δοϊράνη &amp; Σκρά"><img src="img/map_6.jpg" alt="Χάρτης: Δοϊράνη &amp; Σκρά" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r6_1.jpg" data-cap="Λίμνη Δοϊράνη"><img src="img/r6_1.jpg" alt="Λίμνη Δοϊράνη" loading="lazy"><figcaption>Λίμνη Δοϊράνη</figcaption></figure><figure class="ph" data-src="img/r6_2.jpg" data-cap="Καταρράκτες Σκρά"><img src="img/r6_2.jpg" alt="Καταρράκτες Σκρά" loading="lazy"><figcaption>Καταρράκτες Σκρά</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.99359,22.87415/41.17859,22.76106/41.14750,22.48400/40.98555,22.54228/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card">
+<header class="ch"><span class="num">07</span><h2>Λαϊλιάς</h2></header>
+<div class="stats"><div><b>264</b><span>km</span></div><div><b>4,3</b><span>ώρες</span></div><div><b>Κυριακή</b><span>μέρα</span></div><div><b>2–8°C πάνω</b><span>καιρός</span></div></div>
+<p>Μονή Τιμίου Προδρόμου και στροφές μέσα σε δάσος ως τα 1500 μ. Θέλει θερμικά.</p>
+<figure class="map" data-src="img/map_7.jpg" data-cap="Λαϊλιάς"><img src="img/map_7.jpg" alt="Χάρτης: Λαϊλιάς" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r7_1.jpg" data-cap="Δάσος Λαϊλιά"><img src="img/r7_1.jpg" alt="Δάσος Λαϊλιά" loading="lazy"><figcaption>Δάσος Λαϊλιά</figcaption></figure><figure class="ph" data-src="img/r7_2.jpg" data-cap="Μονή Τιμίου Προδρόμου"><img src="img/r7_2.jpg" alt="Μονή Τιμίου Προδρόμου" loading="lazy"><figcaption>Μονή Τιμίου Προδρόμου</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.75000,23.06676/41.09107,23.54980/41.26055,23.60171/41.09107,23.54980/40.90789,23.50040/40.75000,23.06676/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card">
+<header class="ch"><span class="num">08</span><h2>Βόλβη &amp; Αμφίπολη</h2></header>
+<div class="stats"><div><b>259</b><span>km</span></div><div><b>4,2</b><span>ώρες</span></div><div><b>Όποια</b><span>μέρα</span></div><div><b>8–19°C</b><span>καιρός</span></div></div>
+<p>Χαλαρή βόλτα: λίμνη, φαράγγι Ρεντίνας, παραλιακός, ο Λέων της Αμφίπολης.</p>
+<figure class="map" data-src="img/map_8.jpg" data-cap="Βόλβη &amp; Αμφίπολη"><img src="img/map_8.jpg" alt="Χάρτης: Βόλβη &amp; Αμφίπολη" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r8_1.jpg" data-cap="Λέων Αμφίπολης"><img src="img/r8_1.jpg" alt="Λέων Αμφίπολης" loading="lazy"><figcaption>Λέων Αμφίπολης</figcaption></figure><figure class="ph" data-src="img/r8_2.jpg" data-cap="Λίμνη Βόλβη"><img src="img/r8_2.jpg" alt="Λίμνη Βόλβη" loading="lazy"><figcaption>Λίμνη Βόλβη</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.75000,23.06676/40.65500,23.63000/40.72500,23.71200/40.81800,23.84200/40.90789,23.50040/40.75000,23.06676/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card">
+<header class="ch"><span class="num">09</span><h2>Καβάλα &amp; Δράμα</h2></header>
+<div class="stats"><div><b>356</b><span>km</span></div><div><b>5,3</b><span>ώρες</span></div><div><b>Όποια</b><span>μέρα</span></div><div><b>9–17°C</b><span>καιρός</span></div></div>
+<p>Παλιός παραλιακός ως την Καβάλα, Φίλιπποι, πηγές Αγίας Βαρβάρας. Πολλή εθνική.</p>
+<figure class="map" data-src="img/map_9.jpg" data-cap="Καβάλα &amp; Δράμα"><img src="img/map_9.jpg" alt="Χάρτης: Καβάλα &amp; Δράμα" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r9_1.jpg" data-cap="Καμάρες Καβάλας"><img src="img/r9_1.jpg" alt="Καμάρες Καβάλας" loading="lazy"><figcaption>Καμάρες Καβάλας</figcaption></figure><figure class="ph" data-src="img/r9_2.jpg" data-cap="Αρχαίοι Φίλιπποι"><img src="img/r9_2.jpg" alt="Αρχαίοι Φίλιπποι" loading="lazy"><figcaption>Αρχαίοι Φίλιπποι</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.84182,24.30558/40.93692,24.41228/41.01328,24.28397/41.14991,24.14688/41.09107,23.54980/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article><article class="card">
+<header class="ch"><span class="num">10</span><h2>Βεγορίτιδα &amp; Νυμφαίο</h2></header>
+<div class="stats"><div><b>313</b><span>km</span></div><div><b>5,0</b><span>ώρες</span></div><div><b>Κυριακή</b><span>μέρα</span></div><div><b>4–9°C · ριπές 66–90</b><span>καιρός</span></div></div>
+<p>Η μεγάλη μέρα: δρόμος δίπλα στη λίμνη και πέτρινο χωριό στα 1350 μ.</p>
+<figure class="map" data-src="img/map_10.jpg" data-cap="Βεγορίτιδα &amp; Νυμφαίο"><img src="img/map_10.jpg" alt="Χάρτης: Βεγορίτιδα &amp; Νυμφαίο" loading="lazy"></figure>
+<div class="photos"><figure class="ph" data-src="img/r10_1.jpg" data-cap="Νυμφαίο"><img src="img/r10_1.jpg" alt="Νυμφαίο" loading="lazy"><figcaption>Νυμφαίο</figcaption></figure><figure class="ph" data-src="img/r10_2.jpg" data-cap="Λίμνη Βεγορίτιδα"><img src="img/r10_2.jpg" alt="Λίμνη Βεγορίτιδα" loading="lazy"><figcaption>Λίμνη Βεγορίτιδα</figcaption></figure></div>
+<a class="go" href="https://www.google.com/maps/dir/40.64032,22.93527/40.80085,22.05035/40.79815,21.83510/40.68976,21.67908/40.63750,21.58250/40.68976,21.67908/40.79815,21.83510/40.80085,22.05035/40.64032,22.93527" target="_blank" rel="noopener">Άνοιγμα στο Google Maps</a>
+</article>
+</section>
+<section class="tips">
+<div><b>Πάχνη</b>Το πρωί στα ορεινά, στις σκιερές στροφές.</div>
+<div><b>Κυνήγι</b>Κυριακή: αγροτικά σταθμευμένα σε στροφές.</div>
+<div><b>Πριόνια</b>Ελέγξτε ότι ο δρόμος είναι ανοιχτός.</div>
+<div><b>Πρόγνωση</b>Της 18/11. Ξαναδείτε την Παρασκευή.</div>
+</section>
+<footer>Καιρός: meteo.gr, Open-Meteo · Διαδρομές: OSRM / OpenStreetMap · Χάρτες: Esri, HERE, Garmin, © OpenStreetMap · Φωτογραφίες: Wikimedia Commons (<a href="https://commons.wikimedia.org/wiki/File:Loutra_Pozar_8265323.JPG" target="_blank" rel="noopener">1.1</a> · <a href="https://commons.wikimedia.org/wiki/File:The_waterfalls_of_Edessa_in_autumn.jpg" target="_blank" rel="noopener">1.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Olympmassiv-litochoro-richtung-enipeas-tal.JPG" target="_blank" rel="noopener">2.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Olympmassiv-prionia-agios-dionisios-b.JPG" target="_blank" rel="noopener">2.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Platamonas%2C_Pieria_prefecture%2C_Greece.jpg" target="_blank" rel="noopener">3.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Palaios_Panteleimonas_1.jpg" target="_blank" rel="noopener">3.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Sarakatsana%2C_Pierian_Mountains.jpg" target="_blank" rel="noopener">4.1</a> · <a href="https://commons.wikimedia.org/wiki/File:ViewofElatochori.jpg" target="_blank" rel="noopener">4.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Dalmatian_Pelicans_at_Lake_Kerkini.jpg" target="_blank" rel="noopener">5.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Lake_Kerkini_kz02.jpg" target="_blank" rel="noopener">5.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Lake_Doirani_1.jpg" target="_blank" rel="noopener">6.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Skra_waterfalls_8255280.JPG" target="_blank" rel="noopener">6.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Lailias_forest_-_%CE%94%CE%AC%CF%83%CE%BF%CF%82_%CE%9B%CE%B1%CF%8A%CE%BB%CE%B9%CE%AC.JPG" target="_blank" rel="noopener">7.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Monastery_of_Saint_John_the_Forerunner.jpg" target="_blank" rel="noopener">7.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Amphipolis_Lion.jpg" target="_blank" rel="noopener">8.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Lake_Volvi_01.jpg" target="_blank" rel="noopener">8.2</a> · <a href="https://commons.wikimedia.org/wiki/File:Kavala_Aqueduct_Kamares_Greece_%2816611060636%29.jpg" target="_blank" rel="noopener">9.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Philippi_city_center.jpg" target="_blank" rel="noopener">9.2</a> · <a href="https://commons.wikimedia.org/wiki/File:199_Neveska_View_from_the_Church.jpg" target="_blank" rel="noopener">10.1</a> · <a href="https://commons.wikimedia.org/wiki/File:Lake_Vegoritida%2C_Macedonia%2C_Greece.jpg" target="_blank" rel="noopener">10.2</a>)</footer>
+</div>
+<div id="lb"><img alt=""><p></p></div>
+<script>
+const lb=document.getElementById('lb');
+document.querySelectorAll('figure[data-src]').forEach(f=>f.addEventListener('click',()=>{lb.querySelector('img').src=f.dataset.src;lb.querySelector('p').textContent=f.dataset.cap;lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+addEventListener('keydown',e=>e.key==='Escape'&&lb.classList.remove('on'));
+</script>
+</body></html>
